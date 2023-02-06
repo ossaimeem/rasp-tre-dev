@@ -1,15 +1,15 @@
 ---
 # After you have replaced all the __CHANGE_ME__ values in this file, you need to
 # run `make auth` to setup the Auth.
-tre_id: __CHANGE_ME__
-location: __CHANGE_ME__
+tre_id: rasp-tre-dev
+location: eastus
 management:
-  mgmt_resource_group_name: __CHANGE_ME__
-  mgmt_storage_account_name: __CHANGE_ME__
+  mgmt_resource_group_name: rasp-tre-dev-rg
+  mgmt_storage_account_name: rasp-tre-dev-blob
   terraform_state_container_name: tfstate
-  acr_name: __CHANGE_ME__
+  acr_name: rasp-tre-dev-acr
   # Azure Resource Manager credentials used for CI/CD pipelines
-  arm_subscription_id: __CHANGE_ME__
+  arm_subscription_id: 487e6cc2-4456-45d8-8e2e-3a5770fae991
 
   # If you want to override the currently signed in credentials
   # You would do this if running commands like `make terraform-install DIR=./templates/workspaces/base`
@@ -40,7 +40,7 @@ tre:
   # deploy_ui: false
 
 authentication:
-  aad_tenant_id: __CHANGE_ME__
+  aad_tenant_id: 76d5a320-4893-4aee-a464-d36b80c1882c
   # Setting AUTO_WORKSPACE_APP_REGISTRATION to false will:
   # create an identity with `Application.ReadWrite.OwnedBy`.
   # Setting AUTO_WORKSPACE_APP_REGISTRATION to true will:
