@@ -1,21 +1,21 @@
 ---
 # After you have replaced all the __CHANGE_ME__ values in this file, you need to
-# run `mak` to setup the Auth.
-tre_id: rasptredev
-location: eastus
+# run `make auth` to setup the Auth.
+tre_id: __CHANGE_ME__
+location: __CHANGE_ME__
 management:
-  mgmt_resource_group_name: rasptredevrg
-  mgmt_storage_account_name: rasptredevblob
+  mgmt_resource_group_name: __CHANGE_ME__
+  mgmt_storage_account_name: __CHANGE_ME__
   terraform_state_container_name: tfstate
-  acr_name: rasptredevacr
+  acr_name: __CHANGE_ME__
   # Azure Resource Manager credentials used for CI/CD pipelines
-  arm_subscription_id: 487e6cc2-4456-45d8-8e2e-3a5770fae991
+  arm_subscription_id: __CHANGE_ME__
 
   # If you want to override the currently signed in credentials
   # You would do this if running commands like `make terraform-install DIR=./templates/workspaces/base`
-  # arm_tenant_id:
-  # arm_client_id:
-  # arm_client_secret:
+  # arm_tenant_id: __CHANGE_ME__
+  # arm_client_id: __CHANGE_ME__
+  # arm_client_secret: __CHANGE_ME__
 
 tre:
   # If your local machine/build agent cannot get the public IP
@@ -24,7 +24,7 @@ tre:
   # be caused by trying to deploy TRE in an Office environment where
   # this website is blocked. This value is the public facing IP
   # address of the deploying machine.
-  # public_deployment_ip_address:
+  # public_deployment_ip_address: __CHANGE_ME__
   core_address_space: 10.1.0.0/22
   tre_address_space: 10.0.0.0/12
 
@@ -40,7 +40,7 @@ tre:
   # deploy_ui: false
 
 authentication:
-  aad_tenant_id: 76d5a320-4893-4aee-a464-d36b80c1882c
+  aad_tenant_id: __CHANGE_ME__
   # Setting AUTO_WORKSPACE_APP_REGISTRATION to false will:
   # create an identity with `Application.ReadWrite.OwnedBy`.
   # Setting AUTO_WORKSPACE_APP_REGISTRATION to true will:
