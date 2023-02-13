@@ -9,7 +9,7 @@ management:
   terraform_state_container_name: tfstate
   acr_name: rasptredevacr
   # Azure Resource Manager credentials used for CI/CD pipelines
-  arm_subscription_id: 487e6cc2-4456-45d8-8e2e-3a5770fae991
+  arm_subscription_id: 96f889ee-3654-4f61-b369-5f93574edc37
 
   # If you want to override the currently signed in credentials
   # You would do this if running commands like `make terraform-install DIR=./templates/workspaces/base`
@@ -40,7 +40,7 @@ tre:
   # deploy_ui: false
 
 authentication:
-  aad_tenant_id: 76d5a320-4893-4aee-a464-d36b80c1882c
+  aad_tenant_id: f7c49e36-971b-42c7-b244-a88eed6c0bf6
   # Setting AUTO_WORKSPACE_APP_REGISTRATION to false will:
   # create an identity with `Application.ReadWrite.OwnedBy`.
   # Setting AUTO_WORKSPACE_APP_REGISTRATION to true will:
